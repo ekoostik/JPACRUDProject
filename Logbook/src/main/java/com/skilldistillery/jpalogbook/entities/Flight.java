@@ -8,7 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity	
+@Entity
 public class Flight {
 
 	@Id
@@ -19,7 +19,7 @@ public class Flight {
 	@Column(name = "flight_date")
 	private Date flightDate;
 	
-	@Column(name = "aircraft_id") 
+	@Column(name = "aircraft_id")
 	private String aircraftId;
 	
 	@Column(name ="aircraft_type")

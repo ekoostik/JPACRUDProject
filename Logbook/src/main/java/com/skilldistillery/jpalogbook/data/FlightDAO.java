@@ -6,10 +6,10 @@ import com.skilldistillery.jpalogbook.entities.Flight;
 
 public interface FlightDAO {
 	
-	Flight findById(int id);
-	List<Flight> findAll();
-	Flight create(Flight flt); 
-	Flight update(int id, Flight flt);
-	boolean deleteById(int id);
+	public Flight findById(int id);
+	public List<Flight> findAll();
+	public Flight create(Flight flt); 
+	public Flight update(int id, Flight flt);
+	public boolean deleteById(int id);
 
 }

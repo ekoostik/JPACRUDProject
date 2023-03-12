@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>Create a new flight</h2>
+
+
+<form action="home.do" method="GET">
+		<input
+			type="submit" class="btn btn-info" value="Fly Home" />
+	</form>
+<br>
+	<form action="addFlight.do" method="POST">
+	<label for="flightDate">Flight Date:</label> 
+		<input type="date" name="flightDate" value="" /> 
+		<br> 
+		<label for="aircraftId">Aircraft ID:</label> 
+		<input type="text" name="aircraftId" value="" /> 
+		<br> 
+		<label for="aircraftType">Aircraft Type:</label> 
+		<input type="text" name="aircraftType" value="" /> 
+		<br> 
+		<label for="landingCount">Landings:</label> 
+		<input type="number" name="landingCount" value="" /> 
+		<br> 
+		<label for="flightConditions">Flight Conditions</label>
+		<select name="flightConditions" id="flightConditions"> 
+			<option value="">Please Choose</option>
+			<option value="IFR">IFR</option>
+		    <option value="VFR">VFR</option>
+		</select>
+		
+		<br> 
+		<label for="remarks">Remarks:</label> 
+		<input type="text" name="remarks" value="" /> 
+
+	<br>
+		<input type="submit" class="btn btn-success"value="Add Flight">
+	</form>
+	<div> <button class="button"> <a href="home.do">Cancel</a></button></div>
+</body>
+</html>
