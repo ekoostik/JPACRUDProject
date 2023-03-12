@@ -32,7 +32,20 @@ public class FlightDaoImpl implements FlightDAO {
 	@Override
 	public Flight create(Flight flt) {
 		// TODO Auto-generated method stub
-		return null;
+		Flight newflight = new Flight();
+		
+		
+		newflight.setFlightDate(flt.getFlightDate());
+		newflight.setAircraftId(flt.getAircraftId());
+		newflight.setAircraftType(flt.getAircraftType());
+		newflight.setLandingCount(flt.getLandingCount());
+		newflight.setFlightConditions(flt.getFlightConditions());
+		newflight.setRemarks(flt.getRemarks());
+		
+		
+		em.persist(newflight);
+		
+		return newflight;
 	}
 
 	
@@ -41,13 +54,27 @@ public class FlightDaoImpl implements FlightDAO {
 	@Override
 	public Flight update(int id, Flight flt) {
 		// TODO Auto-generated method stub
-		return null;
+	 Flight updated = em.find(Flight.class, id);
+		updated.setAircraftId(flt.getAircraftId());
+		updated.setFlightDate(flt.getFlightDate());
+		updated.setAircraftType(flt.getAircraftType());
+		updated.setLandingCount(flt.getLandingCount());
+		updated.setFlightConditions(flt.getFlightConditions());
+		updated.setRemarks(flt.getRemarks());
+		
+		return updated;
 	}
 
 	@Override
 	public boolean deleteById(int id) {
 		// TODO Auto-generated method stub
-		return false;
+		boolean didDelete = false;
+		Flight flt = em.find(Flight.class, id);
+		if(em.contains(flt)) {
+			em.remove(flt);
+			didDelete = true;
+		}
+		return didDelete;
 	}
 
 }

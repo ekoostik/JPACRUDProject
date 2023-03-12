@@ -11,9 +11,9 @@
 
 <h1>TESTING LOGBOOK PAGE</h1>
 
-
-<c:forEach var="flights" items="${flights}">
 <ul>
+<c:forEach var="flights" items="${flights}">
+
 <li> ${flights.id} </li>
 <li> ${flights.aircraftId}</li>
 <li> ${flights.flightDate}</li>
