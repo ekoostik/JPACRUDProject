@@ -7,8 +7,28 @@
 <meta charset="UTF-8">
 <title>View Flight</title>
 </head>
+
+<style>
+body{
+
+background-image: url('https://thumbs.dreamstime.com/b/airbus-sideshot-cockpit-control-tower-clouds-background-seen-side-67552806.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed; 
+background-size: cover;
+margin:auto;
+text-align: left;
+color: black;
+}
+
+form{
+text-align: left;
+}
+
+
+</style>
+
 <body>
-<div> <button class="button"> <a href="home.do">Fly Home</a></button></div>
+<button onclick="window.location.href='home.do';">Fly Home</button>
 <c:choose>
 		<c:when test="${! empty flight}">
 

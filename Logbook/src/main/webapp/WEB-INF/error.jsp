@@ -6,6 +6,16 @@
 <meta charset="UTF-8">
 <title>Error</title>
 </head>
+<style>
+body{
+
+background-image: url('https://hiraniconfigmgr.com/PostImages/201.jpeg');
+background-repeat: no-repeat;
+background-attachment: fixed; 
+background-size: cover;
+}
+
+</style>
 <body>
 		<h2>There was an error processing your request</h2>
 		

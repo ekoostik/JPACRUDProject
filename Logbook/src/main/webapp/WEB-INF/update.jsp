@@ -7,6 +7,27 @@
 <meta charset="UTF-8">
 <title>Update Flight</title>
 </head>
+
+<style>
+body{
+
+background-image: url('https://images.unsplash.com/photo-1511140276483-30c1217ca449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvY2twaXR8ZW58MHx8MHx8&w=1000&q=80');
+background-repeat: no-repeat;
+background-attachment: fixed; 
+background-size: cover;
+margin:auto;
+text-align: center;
+color: black;
+}
+
+form{
+margin-top: 200px;
+text-align: center;
+}
+
+
+</style>
+
 <body>
 
 
@@ -46,10 +67,7 @@
 		
 	</form>
 	
-		<form action="home.do" method="GET">
-		<input
-			type="submit" class="btn btn-info" value="Cancel" />
-	</form>
+	<button onclick="window.location.href='home.do';">Cancel</button>
 
 
 </body>

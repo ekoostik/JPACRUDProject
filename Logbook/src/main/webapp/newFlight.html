@@ -4,14 +4,35 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
+<style>
+body{
+
+background-image: url('https://media.cntraveler.com/photos/59c3e54bdcc73c7118ba73cb/16:9/w_2560%2Cc_limit/PilotPhoto_GettyImages-543474954.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed; 
+background-size: cover;
+margin:auto;
+text-align: center;
+color: white;
+}
+
+form{
+margin-top: 200px;
+text-align: center;
+}
+
+
+</style>
+
+
+
+
 <body>
 <h2>Create a new flight</h2>
 
 
-<form action="home.do" method="GET">
-		<input
-			type="submit" class="btn btn-info" value="Fly Home" />
-	</form>
+
 <br>
 	<form action="addFlight.do" method="POST">
 	<label for="flightDate">Flight Date:</label> 
@@ -40,6 +61,6 @@
 	<br>
 		<input type="submit" class="btn btn-success"value="Add Flight">
 	</form>
-	<div> <button class="button"> <a href="home.do">Cancel</a></button></div>
+	<button onclick="window.location.href='home.do';">Fly Home</button>
 </body>
 </html>

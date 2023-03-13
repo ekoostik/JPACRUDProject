@@ -44,7 +44,6 @@
 		<input
 			type="submit" class="btn btn-info" value="Fly Home" />
 	</form>
-	
 
 <div class="container">
         <div class="row">
@@ -56,7 +55,7 @@
 
 <c:forEach var="flight" items="${flight}">
 
-<div class="p-3 mb-2 bg-info text-black">
+<div class="p-3 mb-2 bg-warning text-black">
 				<ul>
 
 <li> <a href="getFlightById.do?id=${flight.id}"><strong>${flight.id}</strong></a></li>
